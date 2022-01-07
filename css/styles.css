@@ -46,6 +46,13 @@ body {
   cursor: pointer;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: orangered 1px solid;
+}
+
 /* Header */
 
 .logo {
