@@ -14,9 +14,12 @@
   --title-text-color: #212121;
   --white-text-color: #ffffff;
   --accent-color: #2196f3;
+  --accent-button-color: #188ce8;
   --background-primary: #e5e5e5;
   --background-secondary: #f5f4fa;
   --background-footer: #2f303a;
+  --header-line-color: #ececec;
+  --border-cards-color: #eeeeee;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 /* font-family: 'Raleway', sans-serif;
@@ -28,8 +31,21 @@ body {
   background-color: var(--white-text-color);
 }
 
+p,
+ul {
+  margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: rgb(94, 161, 173) 1px solid;
+}
+
 .title {
   color: var(--title-text-color);
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -38,6 +54,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -53,8 +71,18 @@ body {
   outline: orangered 1px solid;
 }
 
-/* Header */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
+/* Header */
+.header {
+  border-bottom: 1px solid var(--header-line-color);
+}
 .logo {
   color: var(--title-text-color);
   font-family: 'Raleway', sans-serif;
@@ -66,7 +94,9 @@ body {
 .logo span {
   color: var(--accent-color);
 }
-
+.site-nav {
+  display: flex;
+}
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -93,13 +123,20 @@ body {
 .contacts .link:focus {
   color: var(--accent-color);
 }
+
 /* Main */
+/* hero */
 
 .hero {
   background-color: var(--background-footer);
+  text-align: center;
+  /* padding: 200px 0; */
 }
 
 .hero-title {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -115,17 +152,22 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--accent-button-color);
+
+  /*   border: 1px solid transparent;
+  #188CE8 */
 }
+
+/* features */
 
 .feature-list-title {
   font-weight: 700;
@@ -141,18 +183,27 @@ body {
   letter-spacing: 0.03em;
 }
 
-.command .title {
+/* occupation */
+
+/* our-command */
+
+.our-team {
+}
+
+.team .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.command .text {
+.team .text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+/* portfolio */
 
 .filters .button {
   font-weight: 500;
@@ -166,6 +217,16 @@ body {
 .filters .button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+}
+
+.example img {
+  display: block;
+}
+
+.example-description {
+  border-left: 1px solid var(--border-cards-color);
+  border-right: 1px solid var(--border-cards-color);
+  border-bottom: 1px solid var(--border-cards-color);
 }
 
 .examples-title {
@@ -190,6 +251,7 @@ body {
   color: var(--white-text-color);
   font-style: normal;
 }
+
 .footer .link {
   color: var(--footer-link-color);
   font-size: 14px;
