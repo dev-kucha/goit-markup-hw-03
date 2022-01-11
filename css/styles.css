@@ -72,6 +72,7 @@ ul {
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -228,6 +229,14 @@ ul {
 }
 
 /* occupation */
+
+.occupation-list {
+  display: flex;
+}
+
+.occupation-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* our-command */
 
