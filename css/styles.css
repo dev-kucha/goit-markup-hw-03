@@ -241,6 +241,22 @@ ul {
 /* our-command */
 
 .our-team {
+  background-color: var(--background-secondary);
+}
+
+.team {
+  display: flex;
+}
+
+.team .item {
+  text-align: center;
+  background-color: var(--white-text-color);
+  border-radius: 0 0 4px 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .title {
@@ -248,12 +264,15 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team .text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 /* portfolio */
