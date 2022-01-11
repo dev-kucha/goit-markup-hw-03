@@ -83,7 +83,20 @@ ul {
 .header {
   border-bottom: 1px solid var(--header-line-color);
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
+
   color: var(--title-text-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -97,7 +110,16 @@ ul {
 .site-nav {
   display: flex;
 }
+
+.site-nav .item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -111,7 +133,20 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
