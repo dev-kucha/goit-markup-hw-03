@@ -80,6 +80,19 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Header */
 .header {
   border-bottom: 1px solid var(--header-line-color);
@@ -319,10 +332,11 @@ ul {
 
 .example .example-illustration {
   display: block;
-  margin-bottom: 20px;
 }
 
 .example-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-left: 1px solid var(--border-cards-color);
   border-right: 1px solid var(--border-cards-color);
   border-bottom: 1px solid var(--border-cards-color);
@@ -340,7 +354,6 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 
 /* footer */
