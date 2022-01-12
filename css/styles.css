@@ -340,6 +340,8 @@ ul {
 .example-description {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-left: 1px solid var(--border-cards-color);
   border-right: 1px solid var(--border-cards-color);
   border-bottom: 1px solid var(--border-cards-color);
